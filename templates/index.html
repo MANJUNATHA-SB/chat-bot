@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="..//static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">AI Assistant</div>
+        <div class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#features">Features</a>
+            <a href="#demo">Try Demo</a>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Meet Your New AI Assistant</h1>
+            <p class="hero-subtitle">Fast, intelligent, and context-aware. Experience the future of AI right in your browser.</p>
+            <a href="#demo" class="cta-btn">Start Chatting Now</a>
+        </div>
+    </header>
+
+    <section id="features" class="features-section">
+        <h2>Why Choose Our AI?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Lightning Fast</h3>
+                <p>Powered by the cutting-edge Gemini 2.5 Flash model for near-instant responses.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Context Aware</h3>
+                <p>The AI remembers your conversation history, making interactions smooth and natural.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Beginner Friendly</h3>
+                <p>A simple, clean interface that anyone can pick up and use immediately.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="demo-section">
+        <h2>Try It Yourself</h2>
+        <p class="demo-subtitle">Chat directly with the AI below. No sign-up required.</p>
+        
+        <div id="app">
+            <header class="app-header">
+                <h2>Live Chat Demo</h2>
+                <button class="clear-btn" onclick="clearChat()">Clear Chat</button>
+            </header>
+            
+            <div id="messages">
+                <div class="message-container bot">
+                    <div class="message-bubble">Hello! How can I help you today?</div>
+                </div>
+            </div>
+            
+            <footer class="app-footer">
+                <div id="input-area">
+                    <input type="text" id="userInput" placeholder="Type a message...">
+                    <button class="send-btn" onclick="sendMessage()">Send</button>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 AI Assistant. Powered by Gemini 2.5 Flash.</p>
+    </footer>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
